@@ -13,30 +13,10 @@ body {
 .header {
     background-image: url(../img/banner-2.jpg);
     background-attachment: fixed;
-    padding: 10% 20px;
+    padding: 10% 15%;
     text-align: center;
     background-size: cover;
-    font-size: 45px;
-}
-
-
-/* Style the topnav links */
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-/* Change color on hover */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    font-size: 6vw;
 }
 
 
@@ -45,37 +25,32 @@ body {
 .one-column {
     float: left;
     width: 100%;
-    padding: 0 20% 0 20%;
+    padding: 2% 15% 5% 15%;
 }
 
-.one-column h1 {
+.one-column h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 6vw;
 }
 
 .two-column {
     float: left;
     width: 50%;
-    padding: 20px;
+    padding: 0 0 20px 35px;
 }
 
 .four-column {
-    padding: 20px;
+    padding: 25px;
     float: left;
     width: 25%;
     text-align: center;
 }
 
-.fourb-column {
-    float: left;
-    width: 25%;
+.four-column h4 {
+    font-size: 1.5vw;
 }
 
 .four-column img {
-    width: 100%;
-}
-
-.fourb-column img {
     width: 100%;
 }
 
@@ -84,21 +59,19 @@ body {
 }
 
 .two-column h2 {
-    font-size: 60px;
+    font-size: 6vw;
 }
 
 .two-column p {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
-.footer {
+.footerb {
     float: left;
-    width: 33.3%;
+    padding: 15px 0 0 15px;
+    width: 25%;
     color: white;
-}
-
-.footer h5 {
-    text-align: center;
+    font-size: 2vw;
 }
 
 
@@ -125,11 +98,36 @@ body {
     background-color: black;
 }
 
+#footer_text {
+    color: white;
+    font-size: 2.5vw;
+}
+
+.sin_pad {
+    padding: 0;
+    margin-bottom: -5px;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:700px) {
-    .fourb-column {
+    .one-column h1 {
+        font-size: 45px;
+    }
+    .one-column h2 {
+        text-align: center;
+    }
+    .four-column {
         width: 50%;
+    }
+    .two-column {
+        clear: both;
+        width: 100%;
+        padding: 0 10%;
+    }
+    .footerb {
+        width: 50%;
+        padding: 0 0 0 15px;
     }
 }
