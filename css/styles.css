@@ -16,7 +16,7 @@ body {
     padding: 10% 15%;
     text-align: center;
     background-size: cover;
-    font-size: 6vw;
+    font-size: 3vw;
 }
 
 
@@ -25,7 +25,7 @@ body {
 .one-column {
     float: left;
     width: 100%;
-    padding: 2% 15% 5% 15%;
+    padding: 2% 16% 3% 16%;
 }
 
 .one-column h2 {
@@ -33,21 +33,32 @@ body {
     font-size: 6vw;
 }
 
+.one-column2 {
+    float: left;
+    width: 100%;
+    padding: 0 14% 3% 14%;
+}
+
+.one-column2 h2 {
+    text-align: center;
+    font-size: 6vw;
+}
+
 .two-column {
     float: left;
     width: 50%;
-    padding: 0 0 20px 35px;
+    padding: 1.8% 1% 1.4% 35px;
 }
 
 .four-column {
-    padding: 25px;
+    padding: 0 12px 0 12px;
     float: left;
     width: 25%;
     text-align: center;
 }
 
 .four-column h4 {
-    font-size: 1.5vw;
+    font-size: 1.27vw;
 }
 
 .four-column img {
@@ -66,12 +77,22 @@ body {
     font-size: 3vw;
 }
 
+.footera {
+    float: left;
+    width: 50%;
+    padding: 1.8% 1% 1.4% 35px;
+}
+
+.footera p {
+    font-size: 1.44vw;
+}
+
 .footerb {
     float: left;
     padding: 15px 0 0 15px;
     width: 25%;
     color: white;
-    font-size: 2vw;
+    font-size: 1.4vw;
 }
 
 
@@ -100,7 +121,7 @@ body {
 
 #footer_text {
     color: white;
-    font-size: 2.5vw;
+    font-size: 1vw;
 }
 
 .sin_pad {
@@ -112,22 +133,52 @@ body {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:700px) {
+    .header {
+        font-size: 6vw;
+    }
+    .one-column {
+        float: left;
+        width: 100%;
+        padding: 2% 16% 8% 16%;
+    }
     .one-column h1 {
         font-size: 45px;
     }
     .one-column h2 {
         text-align: center;
     }
+    .two-column {
+        width: 100%;
+        padding: 5% 5% 4% 5%;
+    }
+    .two-column h2 {
+        font-size: 8.2vw;
+    }
+    .two-column p {
+        font-size: 4vw;
+    }
     .four-column {
         width: 50%;
+        padding: 0 3% 2% 3%;
     }
-    .two-column {
+    .four-column h4 {
+        font-size: 3.5vw;
+    }
+    .sin_pad {
+        padding: 0;
+        margin-bottom: -5px;
+    }
+    .footera {
         clear: both;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 5%;
+    }
+    .footera p {
+        font-size: 3.4vw;
     }
     .footerb {
         width: 50%;
-        padding: 0 0 0 15px;
+        padding: 0 0 1% 5%;
+        font-size: 3.2vw;
     }
 }
